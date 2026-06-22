@@ -14,10 +14,7 @@ public class MathCalculator {
     }
 
     public static double allOperations(double first, double second) {
-        return MathFunction.sum(first, second)
-                + MathFunction.multiply(first, second) + MathFunction.division(first, second)
-                + MathFunction.difference(first, second);
-
+        return sumAndMultiply(first, second) + differenceAndDivision(first, second);
     }
 
     public static void main(String[] args) {
