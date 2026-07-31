@@ -5,8 +5,8 @@ public class Savings {
         int years = 0;
         double total = 0;
         do {
-            double everyYearsPercent =  total * (percent / 100);
-            total =  total + annualDeposit + everyYearsPercent;
+            double annualYearsPercent =  total * (percent / 100);
+            total =  total + annualDeposit + annualYearsPercent;
             years++;
         } while (total < goal);
         return years;
